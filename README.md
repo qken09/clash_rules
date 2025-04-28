@@ -35,7 +35,8 @@ https://raw.githubusercontent.com/qken09/clash_rules/refs/heads/main/png/Taiwan.
 https://raw.githubusercontent.com/qken09/clash_rules/80e07f308440264df87ec3b364429cad8b8ad527/png/Taiwan.png
   
 参考出处：  
-https://fastly.jsdelivr.net/gh/Koolson/Qure@latest/IconSet/Color/
+https://fastly.jsdelivr.net/gh/Koolson/Qure@latest/IconSet/Color/  
+https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/
 
 
 
