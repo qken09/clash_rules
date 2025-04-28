@@ -31,8 +31,8 @@ https://whatshub.top/rule/
 图标：  
   
 举例：  
-https://raw.githubusercontent.com/qken09/clash_rules/refs/heads/main/png/Taiwan.png  
-https://github.com/qken09/clash_rules/blob/80e07f308440264df87ec3b364429cad8b8ad527/png/AbemaTV.png
+https://raw.githubusercontent.com/qken09/clash_rules/refs/heads/main/png/Taiwan.png    
+https://raw.githubusercontent.com/qken09/clash_rules/80e07f308440264df87ec3b364429cad8b8ad527/png/Taiwan.png
   
 参考出处：  
 https://fastly.jsdelivr.net/gh/Koolson/Qure@latest/IconSet/Color/
