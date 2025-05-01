@@ -48,7 +48,7 @@ dns:
   prefer-h3: false
   respect-rules: true
   use-hosts: true
-  use-system-hosts: false
+  use-system-hosts: true
   fake-ip-filter:
     - '*.lan'
     - '*.local'
@@ -80,7 +80,8 @@ dns:
   fallback-filter:
     geoip: true
     geoip-code: 'CN'
-    geosite: [gfw]
+    geosite: 
+      - gfw
     ipcidr:
       - '240.0.0.0/4'
       - '0.0.0.0/32'
@@ -93,4 +94,4 @@ dns:
     - 'https://doh.pub/dns-query'
   follow-rule: null
   skip-cert-verify: true
-  
+
