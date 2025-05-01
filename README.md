@@ -41,6 +41,7 @@ https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/
 数据库：  https://github.com/MetaCubeX/meta-rules-dat  
 GeoIP数据库：  https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat  
 https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.db  
+https://fastly.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb  
 GeoSite数据库：  https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat  
 https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.db  
 MMDB数据库：  https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.metadb  
