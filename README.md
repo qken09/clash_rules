@@ -38,18 +38,59 @@ https://raw.githubusercontent.com/qken09/clash_rules/80e07f308440264df87ec3b3644
 https://fastly.jsdelivr.net/gh/Koolson/Qure@latest/IconSet/Color/  
 https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/
 
-
-dns:  
-  enable: true   
-  ipv6: false 
-  default-nameserver: [223.5.5.5,119.29.29.29,114.114.114.114］  
-  
-  enhanced-mode: fake-ip   
-  fake-ip-range: 198.18.0.1/16  
-  use-hosts: true   
-  respect-rules: true   
-  proxy-server-nameserver: ［223.5.5.5,119.29.29.29,114.114.114.114]
-  nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
-  fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns. twnic. tw/dns-query','tls://8.8.4.4:853']  
-  fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr:[240.0.0.0/4], domain: [+.google.com, +. facebook.com,+.youtube.com }  
+dns:
+  enable: true
+  ipv6: false
+  listen: ':53'
+  enhanced-mode: 'fake-ip'
+  fake-ip-range: '198.18.0.1/16'
+  fake-ip-filter-mode: 'blacklist'
+  prefer-h3: false
+  respect-rules: true
+  use-hosts: true
+  use-system-hosts: false
+  fake-ip-filter:
+    - '*.lan'
+    - '*.local'
+    - '*.arpa'
+    - time.*.com
+    - ntp.*.com
+    - time.*.com
+    - +.market.xiaomi.com
+    - localhost.ptlogin2.qq.com
+    - '*.msftncsi.com'
+    - www.msftconnecttest.com
+    - localhost.ptlogin2.qq.com
+    - localhost.sec.qq.com
+    - localhost.work.weixin.qq.com
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 94.140.14.14
+    - system
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  direct-nameserver-follow-policy: false
+  fallback:
+    - 'https://doh.dns.sb/dns-query'
+    - 'https://dns.cloudflare.com/dns-query'
+    - 'https://dns.twnic.tw/dns-query'
+    - 'tls://8.8.4.4:853'
+  fallback-filter:
+    geoip: true
+    geoip-code: 'CN'
+    geosite: [gfw]
+    ipcidr:
+      - '240.0.0.0/4'
+      - '0.0.0.0/32'
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
+  proxy-server-nameserver:
+    - 'https://223.5.5.5/dns-query'
+    - 'https://doh.pub/dns-query'
+  follow-rule: null
+  skip-cert-verify: true
   
