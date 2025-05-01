@@ -38,6 +38,12 @@ https://raw.githubusercontent.com/qken09/clash_rules/80e07f308440264df87ec3b3644
 https://fastly.jsdelivr.net/gh/Koolson/Qure@latest/IconSet/Color/  
 https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/
 
+数据库：  
+GeoIP数据库：  https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat  
+GeoSite数据库：  https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat  
+MMDB数据库：  https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.metadb  
+ASN数据库：  https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb  
+
 dns:
   enable: true
   ipv6: false
